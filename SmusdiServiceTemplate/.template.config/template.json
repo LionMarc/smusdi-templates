@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Marc LION",
+  "classifications": [
+    "Smusdi"
+  ],
+  "name": "Smusdi Service",
+  "description": "Template solution for a new SMUSDI service.",
+  "groupIdentity": "Dotnet.Custom.Smusdi",
+  "identity": "Dotnet.Custom.Smusdi.CSharp",
+  "shortName": "smusdi-service",
+  "defaultName": "SmusdiService",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "ServiceName",
+  "preferNameDirectory": false,
+  "primaryOutputs": [
+    {
+      "path": "ServiceName.sln"
+    }
+  ],
+  "sources": [
+    {
+      "modifiers": []
+    }
+  ],
+  "symbols": {
+    "oauthUrl": {
+      "type": "parameter",
+      "description": "The url of the oauth service",
+      "defaultValue": "host.docker.internal:8080",
+      "replaces": "{OAUTH_URL}"
+    },
+    "serviceKebabCase": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "kebab",
+      "replaces": "serviceKebabCase"
+    }
+  },
+  "forms": {
+    "kebab": {
+      "identifier": "kebabCase"
+    }
+  },
+  "SpecialCustomOperations": {},
+  "postActions": [
+    {
+      "description": "Restore NuGet packages.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}

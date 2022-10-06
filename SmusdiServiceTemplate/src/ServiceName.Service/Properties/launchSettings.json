@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "settings-from-filesystem": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SMUSDI_APPSETTINGS_FOLDER": "$(ConfigFilesFolder)",
+        "SMUSDI_SERVICE_NAME": "serviceKebabCase",
+        "SMUSDI_OAUTH_URL": "{OAUTH_URL}"
+      }
+    }
+  }
+}

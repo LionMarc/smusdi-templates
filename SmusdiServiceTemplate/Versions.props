@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <SmusdiVersion>1.0.0</SmusdiVersion>
+    <SpecFlowVersion>3.9.74</SpecFlowVersion>
+    <EntityFrameworkVersion>6.0.9</EntityFrameworkVersion>
+    <NpgsqlVersion>6.0.7</NpgsqlVersion>
+  </PropertyGroup>
+</Project>

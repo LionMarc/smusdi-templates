@@ -3,6 +3,7 @@
     "settings-from-filesystem": {
       "commandName": "Project",
       "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT" : "Development",
         "SMUSDI_APPSETTINGS_FOLDER": "$(ConfigFilesFolder)",
         "SMUSDI_SERVICE_NAME": "serviceKebabCase",
         "SMUSDI_OAUTH_URL": "{OAUTH_URL}"

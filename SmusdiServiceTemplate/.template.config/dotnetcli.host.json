@@ -6,6 +6,12 @@
             "description": "The url of the oauth service",
             "defaultValue": "host.docker.internal:8080",
             "replaces": "{OAUTH_URL}"
+        },
+        "appsettingsFolder": {
+            "type": "parameter",
+            "description": "The folder name which contains the appsettings files",
+            "defaultValue": "smusdi-appsettings",
+            "replaces": "{APPSETTINGS_FOLDER}"
         }
     }
 }

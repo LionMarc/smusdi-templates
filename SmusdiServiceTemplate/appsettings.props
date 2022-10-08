@@ -1,5 +1,5 @@
 ﻿<Project>
   <PropertyGroup>
-    <ConfigFilesFolder>$(MSBuildThisFileDirectory)\\..\\smusdi-config-files</ConfigFilesFolder>
+    <ConfigFilesFolder>$(MSBuildThisFileDirectory)\\..\\{APPSETTINGS_FOLDER}</ConfigFilesFolder>
   </PropertyGroup>
 </Project>

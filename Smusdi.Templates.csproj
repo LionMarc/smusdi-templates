@@ -5,6 +5,7 @@
     <PackageId>Smusdi.Templates</PackageId>
     <Title>SMUSDI Dotnet Templates</Title>
     <Authors>Marc LION</Authors>
+    <RepositoryUrl>https://github.com/LionMarc/smusdi-templates</RepositoryUrl>
     <Description>Templates to use when creating a SMUSDI service</Description>
     <PackageTags>dotnet;templates;smusdi</PackageTags>
     <TargetFramework>net6.0</TargetFramework>
@@ -12,7 +13,7 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-     <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>

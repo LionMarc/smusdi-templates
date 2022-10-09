@@ -33,16 +33,23 @@
       "defaultValue": "host.docker.internal:8080",
       "replaces": "{OAUTH_URL}"
     },
-    "appsettingsFolder": {
+    "appsettingsFolderName": {
       "type": "parameter",
       "description": "The folder name which contains the appsettings files",
-      "defaultValue": "smusdi-appsettings",
-      "replaces": "{APPSETTINGS_FOLDER}"
+      "defaultValue": "appsettings",
+      "replaces": "{APPSETTINGS_FOLDER_NAME}"
+    },
+    "appsettingsFolderPath": {
+      "type": "parameter",
+      "description": "The relative path of the folder which contains the appsettings files",
+      "defaultValue": "",
+      "replaces": "{APPSETTINGS_FOLDER_PATH}"
     },
     "serviceKebabCase": {
       "type": "derived",
       "valueSource": "name",
       "valueTransform": "kebab",
+      "fileRename": "serviceKebabCase",
       "replaces": "serviceKebabCase"
     }
   },

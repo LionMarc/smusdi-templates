@@ -1,5 +1,5 @@
 ﻿<Project>
   <PropertyGroup>
-    <ConfigFilesFolder>$(MSBuildThisFileDirectory)\\..\\{APPSETTINGS_FOLDER}</ConfigFilesFolder>
+    <ConfigFilesFolder>$(MSBuildThisFileDirectory)\\{APPSETTINGS_FOLDER_PATH}{APPSETTINGS_FOLDER_NAME}</ConfigFilesFolder>
   </PropertyGroup>
 </Project>

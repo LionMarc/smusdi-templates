@@ -26,6 +26,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsettings", "{2EC0D75B-56D9-45C5-81B5-3C88EC3148D2}"
 	ProjectSection(SolutionItems) = preProject
 		appsettings\appsettings.json = appsettings\appsettings.json
+		appsettings\appsettings.Development.json = appsettings\appsettings.Development.json
 		appsettings\appsettings.serviceKebabCase.Development.json = appsettings\appsettings.serviceKebabCase.Development.json
 	EndProjectSection
 EndProject

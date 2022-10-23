@@ -3,16 +3,19 @@
   <Import Project="$(MSBuildThisFileDirectory)\appsettings.props"/>
 
   <ItemGroup>
+    <PackageReference Include="Smusdi.Core"
+                      Version="$(SmusdiVersion)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="!$(MSBuildProjectFile.Contains('PostgreSqlMigration'))">
     <PackageReference Include="StyleCop.Analyzers"
                       Version="1.1.118"
                       PrivateAssets="all"
                       Condition="$(MSBuildProjectExtension) == '.csproj'" />
     <PackageReference Include="SonarAnalyzer.CSharp"
-                      Version="8.46.0.54807"
+                      Version="8.47.0.55603"
                       PrivateAssets="all"
                       Condition="$(MSBuildProjectExtension) == '.csproj'" />
-    <PackageReference Include="Smusdi.Core"
-                      Version="$(SmusdiVersion)" />
   </ItemGroup>
 
   <ItemGroup Condition="$(MSBuildProjectFile.Contains('.Specs.'))">

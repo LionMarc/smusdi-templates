@@ -16,7 +16,7 @@ jobs:
       - name: Pack
         run: dotnet pack Smusdi.Templates.csproj -p:PackageVersion=${{ github.event.release.tag_name }} -o publish
       - name: Publish
-        run: dotnet nuget push publish/*.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source "https://nuget.pkg.github.com/LionMarc/index.json"
+        run: dotnet nuget push publish/*.nupkg --api-key ${{ secrets.NUGET_ORG_KEY }} --source "https://api.nuget.org/v3/index.json"
       - name: Archive packages
         uses: actions/upload-artifact@v3
         with:

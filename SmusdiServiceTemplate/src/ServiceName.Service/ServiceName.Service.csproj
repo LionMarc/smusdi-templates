@@ -6,7 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="$(MSBuildThisFileDirectory)\..\**\*.csproj"
-                          Exclude="$(MSBuildThisFileDirectory)\..\**\$(AssemblyName).csproj" />
+        <ProjectReference Include="$(MSBuildThisFileDirectory)\..\**\*.csproj" Exclude="$(MSBuildThisFileDirectory)\..\**\$(AssemblyName).csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Microsoft.EntityFrameworkCore.Design">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 </Project>

@@ -10,7 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D
 		.editorconfig = .editorconfig
 		appsettings.props = appsettings.props
 		Directory.Build.props = Directory.Build.props
-		Versions.props = Versions.props
+		Directory.Packages.props = Directory.Packages.props
+		NuGet.Config = NuGet.Config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{23E56E3B-393B-473F-A35E-10F1909747DD}"
@@ -25,8 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSqlMigration", "data
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsettings", "{2EC0D75B-56D9-45C5-81B5-3C88EC3148D2}"
 	ProjectSection(SolutionItems) = preProject
-		appsettings\appsettings.json = appsettings\appsettings.json
 		appsettings\appsettings.Development.json = appsettings\appsettings.Development.json
+		appsettings\appsettings.json = appsettings\appsettings.json
 		appsettings\appsettings.serviceKebabCase.Development.json = appsettings\appsettings.serviceKebabCase.Development.json
 	EndProjectSection
 EndProject

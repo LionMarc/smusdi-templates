@@ -8,7 +8,7 @@ This project contains some .NET templates to initialize new service solution or 
     ```
 - To install the package, see [here](https://docs.microsoft.com/en-us/dotnet/core/install/templates?pivots=os-windows):
     ```
-    dotnet new -i <output-folder>\Smusdi.Templates.<version>.nupkg
+    dotnet new install <output-folder>\Smusdi.Templates.<version>.nupkg
     ```
 
 ## Templates

@@ -18,7 +18,9 @@ public class MigrationDbContextFactory : IDesignTimeDbContextFactory<MigrationDb
         var optionsBuilder = new DbContextOptionsBuilder<MigrationDbContext>();
 
         // TODO - Replace public schema with your own
-        optionsBuilder.UseNpgsql(connectionString, x => x.MigrationsHistoryTable("__EFMigrationsHistory", "public"));
+        optionsBuilder
+            .UseNpgsql(connectionString, x => x.MigrationsHistoryTable("__ef-migrations-history", "public"))
+            .UseSnakeCaseNamingConvention();
 
         return new MigrationDbContext(optionsBuilder.Options);
     }

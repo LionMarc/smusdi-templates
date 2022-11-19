@@ -3,7 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Smusdi.Core" Version="6.2.8" />
+    <PackageVersion Include="Smusdi.Core" Version="7.0.0" />
     <PackageVersion Include="Smusdi.Testing" Version="6.2.8" />
     <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="8.48.0.56517" />
@@ -12,9 +12,9 @@
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.5" />
     <PackageVersion Include="SpecFlow.xUnit" Version="3.9.74" />
     <PackageVersion Include="coverlet.collector" Version="3.1.2" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11" />
-    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
-    <PackageVersion Include="EFCore.NamingConventions" Version="6.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0" />
+    <PackageVersion Include="EFCore.NamingConventions" Version="7.0.0" />
   </ItemGroup>
 </Project>

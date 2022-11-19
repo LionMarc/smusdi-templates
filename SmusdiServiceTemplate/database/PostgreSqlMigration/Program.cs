@@ -1,1 +1,3 @@
-﻿Console.WriteLine("Running migration program...");
+﻿using Smusdi.Core;
+
+SmusdiService.InitAndRun(args);

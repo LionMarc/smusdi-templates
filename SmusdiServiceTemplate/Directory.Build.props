@@ -14,8 +14,11 @@
                       Condition="$(MSBuildProjectExtension) == '.csproj'" />
   </ItemGroup>
 
-  <ItemGroup Condition="$(MSBuildProjectFile.Contains('.Specs.'))">
+  <ItemGroup Condition="$(MSBuildProjectFile.Contains('.Specs.')) OR $(MSBuildProjectFile.Contains('.Testing.'))">
     <PackageReference Include="Smusdi.Testing"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(MSBuildProjectFile.Contains('.Specs.'))">
     <PackageReference Include="xunit"/>
     <PackageReference Include="Microsoft.NET.Test.Sdk"/>
     <PackageReference Include="xunit.runner.visualstudio"/>
@@ -55,4 +58,8 @@
       <_Parameter1>$(AssemblyName).Specs</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
+
+  <PropertyGroup Condition="$(MSBuildProjectFile.Contains('.Specs.'))">
+    <RunSettingsFilePath>$(MSBuildThisFileDirectory)\specs\.runsettings</RunSettingsFilePath>
+  </PropertyGroup>
 </Project>

@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		specs\.runsettings = specs\.runsettings
 		appsettings.props = appsettings.props
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props

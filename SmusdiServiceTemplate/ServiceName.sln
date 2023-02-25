@@ -13,7 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		.config\dotnet-tools.json = .config\dotnet-tools.json
-		NuGet.Config = NuGet.Config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{23E56E3B-393B-473F-A35E-10F1909747DD}"
@@ -34,6 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsetting
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{37E4EF1D-8CC0-4174-9232-039F97E0B08F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{165BEDFA-2E8F-4569-B97D-4E6215CDDC79}"
+	ProjectSection(SolutionItems) = preProject
+		database\Directory.Build.props = database\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3}"
+	ProjectSection(SolutionItems) = preProject
+		specs\Directory.Build.props = specs\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46494D62-FAB7-4192-894E-5956E36F356D}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +73,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986} = {23E56E3B-393B-473F-A35E-10F1909747DD}
+		{165BEDFA-2E8F-4569-B97D-4E6215CDDC79} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+		{46494D62-FAB7-4192-894E-5956E36F356D} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BABC9C8-DC9A-482E-84B1-06B0F97D1FAC}

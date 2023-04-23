@@ -3,6 +3,8 @@
 
   <ItemGroup>
     <PackageReference Include="Smusdi.Core"/>
+    <PackageReference Include="Smusdi.PostgreSQL"/>
+    
     <PackageReference Include="Microsoft.EntityFrameworkCore"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
       <PrivateAssets>all</PrivateAssets>

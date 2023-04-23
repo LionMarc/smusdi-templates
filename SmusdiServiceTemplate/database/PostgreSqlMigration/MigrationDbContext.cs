@@ -1,13 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Smusdi.PostgreSQL;
 
 public class MigrationDbContext : DbContext
 {
-    public MigrationDbContext(DbContextOptions<MigrationDbContext> options)
+    private readonly IConfiguration configuration;
+
+    public MigrationDbContext(DbContextOptions<MigrationDbContext> options, IConfiguration configuration)
         : base(options)
     {
+        this.configuration = configuration;
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasDefaultSchema(this.configuration.GetPostgreSqlSchema());
     }
 }

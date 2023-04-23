@@ -3,6 +3,7 @@
 
   <ItemGroup>
     <PackageReference Include="Smusdi.Testing"/>
+    <PackageReference Include="Smusdi.PostgreSQL.Testing"/>
   </ItemGroup>
   
   <ItemGroup>

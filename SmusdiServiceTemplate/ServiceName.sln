@@ -3,12 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceName.Service", "src\ServiceName.Service\ServiceName.Service.csproj", "{A199D1F8-B3B1-4C3B-A7FA-487498249668}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceName", "src\ServiceName\ServiceName.csproj", "{A199D1F8-B3B1-4C3B-A7FA-487498249668}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		specs\.runsettings = specs\.runsettings
 		appsettings.props = appsettings.props
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
@@ -29,10 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsetting
 	ProjectSection(SolutionItems) = preProject
 		appsettings\appsettings.Development.json = appsettings\appsettings.Development.json
 		appsettings\appsettings.json = appsettings\appsettings.json
-		appsettings\appsettings.serviceKebabCase.Development.json = appsettings\appsettings.serviceKebabCase.Development.json
+		appsettings\appsettings.serviceKebabCase.json = appsettings\appsettings.serviceKebabCase.json
 	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{37E4EF1D-8CC0-4174-9232-039F97E0B08F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{165BEDFA-2E8F-4569-B97D-4E6215CDDC79}"
 	ProjectSection(SolutionItems) = preProject
@@ -41,7 +38,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{16
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3}"
 	ProjectSection(SolutionItems) = preProject
+		specs\.runsettings = specs\.runsettings
 		specs\Directory.Build.props = specs\Directory.Build.props
+		specs\specflow.json = specs\specflow.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46494D62-FAB7-4192-894E-5956E36F356D}"
@@ -63,10 +62,6 @@ Global
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37E4EF1D-8CC0-4174-9232-039F97E0B08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37E4EF1D-8CC0-4174-9232-039F97E0B08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37E4EF1D-8CC0-4174-9232-039F97E0B08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37E4EF1D-8CC0-4174-9232-039F97E0B08F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

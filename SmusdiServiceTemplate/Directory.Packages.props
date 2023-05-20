@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <smusdi-version>7.2.3</smusdi-version>
+    <smusdi-version>7.2.4</smusdi-version>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Smusdi.Core" Version="$(smusdi-version)" />
@@ -10,7 +10,7 @@
     <PackageVersion Include="Smusdi.PostgreSQL.Testing" Version="$(smusdi-version)" />
     
     <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.435" />
-    <PackageVersion Include="SonarAnalyzer.CSharp" Version="8.56.0.67649" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.0.0.68202" />
     
     <PackageVersion Include="xunit" Version="2.4.2" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
@@ -23,7 +23,8 @@
     <PackageVersion Include="coverlet.collector" Version="3.2.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5" />
-    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5"/>
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
     <PackageVersion Include="EFCore.NamingConventions" Version="7.0.2" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,10 @@
   <Import Project="$(MSBuildThisFileDirectory)\..\Directory.Build.props"/>
 
   <ItemGroup>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)\..\testing\ServiceName\ServiceName.Testing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Smusdi.Testing"/>
     <PackageReference Include="Smusdi.PostgreSQL.Testing"/>
   </ItemGroup>

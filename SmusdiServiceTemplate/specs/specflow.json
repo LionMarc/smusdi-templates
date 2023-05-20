@@ -5,10 +5,16 @@
     },
     {
       "assembly": "Smusdi.PostgreSQL.Testing"
+    },
+    {
+      "assembly": "ServiceName.Testing"
     }
   ],
   "livingDocGenerator": {
     "enabled": true,
     "filePath": "../../TestExecution.json"
+  },
+  "generator": {
+    "addNonParallelizableMarkerForTags": [ "postgresql" ]
   }
 }

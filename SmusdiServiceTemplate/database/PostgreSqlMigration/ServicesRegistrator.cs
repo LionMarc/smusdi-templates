@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Smusdi.Core.Extensibility;
 using Smusdi.PostgreSQL;
 
+namespace PostgreSqlMigration;
+
 internal class ServicesRegistrator : IServicesRegistrator
 {
     public IServiceCollection Add(IServiceCollection services, IConfiguration configuration)

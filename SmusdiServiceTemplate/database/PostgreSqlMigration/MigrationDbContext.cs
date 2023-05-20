@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Smusdi.PostgreSQL;
 
+namespace PostgreSqlMigration;
+
 public class MigrationDbContext : DbContext
 {
     private readonly IConfiguration configuration;

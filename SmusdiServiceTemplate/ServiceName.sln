@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		.config\dotnet-tools.json = .config\dotnet-tools.json
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{23E56E3B-393B-473F-A35E-10F1909747DD}"
@@ -55,7 +56,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testing", "testing", "{8AB6
 		testing\Directory.Build.props = testing\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceName.Testing", "testing\ServiceName.Testing\ServiceName.Testing.csproj", "{D85606A1-1501-4EF0-9985-9545FF6ED176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceName.Testing", "testing\ServiceName.Testing\ServiceName.Testing.csproj", "{D85606A1-1501-4EF0-9985-9545FF6ED176}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,7 +10,9 @@
     <ProjectReference Include="$(MSBuildThisFileDirectory)\..\**\*.csproj"  Exclude="$(MSBuildThisFileDirectory)\..\**\$(AssemblyName).csproj"/>
   </ItemGroup>
 
+<!--#if (withPostgresql) -->
   <ItemGroup>
     <ProjectReference Include="$(MSBuildThisFileDirectory)\..\..\database\PostgreSqlMigration\PostgreSqlMigration.csproj" />
   </ItemGroup>
+<!--#endif -->
 </Project>

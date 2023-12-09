@@ -18,6 +18,11 @@
             "description": "The relative path of the folder which contains the appsettings files",
             "defaultValue": "",
             "replaces": "{APPSETTINGS_FOLDER_PATH}"
+        },
+        "withPostgresql": {
+            "type": "parameter",
+            "description": "If true, generates solution with postgresql migration project",
+            "defaultValue": "true"
         }
     }
 }

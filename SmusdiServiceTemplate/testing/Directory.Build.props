@@ -3,7 +3,9 @@
 
   <ItemGroup>
     <PackageReference Include="Smusdi.Testing"/>
+<!--#if (withPostgresql) -->
     <PackageReference Include="Smusdi.PostgreSQL.Testing"/>
+<!--#endif -->
   </ItemGroup>
 
   <ItemGroup>

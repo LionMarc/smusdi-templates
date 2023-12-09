@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -15,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{7CCE2D
 		nuget.config = nuget.config
 	EndProjectSection
 EndProject
+#if (withPostgresql == true)
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{23E56E3B-393B-473F-A35E-10F1909747DD}"
 	ProjectSection(SolutionItems) = preProject
 		database\add-migration.bat = database\add-migration.bat
@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_database", "_database", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSqlMigration", "database\PostgreSqlMigration\PostgreSqlMigration.csproj", "{120147B2-E66F-45CE-ACCA-6C68E23C3986}"
 EndProject
+#endif
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsettings", "{2EC0D75B-56D9-45C5-81B5-3C88EC3148D2}"
 	ProjectSection(SolutionItems) = preProject
 		appsettings\appsettings.Development.json = appsettings\appsettings.Development.json
@@ -32,11 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_appsettings", "_appsetting
 		appsettings\appsettings.serviceKebabCase.json = appsettings\appsettings.serviceKebabCase.json
 	EndProjectSection
 EndProject
+#if (withPostgresql == true)
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{165BEDFA-2E8F-4569-B97D-4E6215CDDC79}"
 	ProjectSection(SolutionItems) = preProject
 		database\Directory.Build.props = database\Directory.Build.props
 	EndProjectSection
 EndProject
+#endif
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3}"
 	ProjectSection(SolutionItems) = preProject
 		specs\.runsettings = specs\.runsettings
@@ -68,10 +71,12 @@ Global
 		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A199D1F8-B3B1-4C3B-A7FA-487498249668}.Release|Any CPU.Build.0 = Release|Any CPU
+#if (withPostgresql == true)
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986}.Release|Any CPU.Build.0 = Release|Any CPU
+#endif
 		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85606A1-1501-4EF0-9985-9545FF6ED176}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,8 +86,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+#if (withPostgresql == true)
 		{120147B2-E66F-45CE-ACCA-6C68E23C3986} = {23E56E3B-393B-473F-A35E-10F1909747DD}
 		{165BEDFA-2E8F-4569-B97D-4E6215CDDC79} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
+#endif
 		{174C0F92-EC6C-4C87-9D0F-19B8FAE762C3} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
 		{46494D62-FAB7-4192-894E-5956E36F356D} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}
 		{8AB63397-B907-44C7-BDA7-2DA94643F31B} = {7CCE2D75-6229-4D90-B1AE-A32111EFEEE1}

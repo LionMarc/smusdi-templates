@@ -13,11 +13,10 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="**\*" Exclude="**\.git\**;**\.gitignore;**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;Smusdi.Templaces.csproj;" />
+    <Content Include="SmusdiServiceTemplate\**\*" Exclude="**\.git\**;**\.gitignore;SmusdiServiceTemplate\**\bin\**;SmusdiServiceTemplate\**\obj\**;SmusdiServiceTemplate\.vs\**;SmusdiServiceTemplate\.vscode\**;Smusdi.Templaces.csproj;" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>

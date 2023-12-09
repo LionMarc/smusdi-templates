@@ -3,9 +3,11 @@
     {
       "assembly": "Smusdi.Testing"
     },
+//#if (withPostgresql)
     {
       "assembly": "Smusdi.PostgreSQL.Testing"
     },
+//#endif
     {
       "assembly": "ServiceName.Testing"
     }

@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <smusdi-version>8.0.3</smusdi-version>
+    <smusdi-version>8.1.0</smusdi-version>
   </PropertyGroup>
   <ItemGroup>
     <!-- Smusdi -->
@@ -19,9 +19,10 @@
     <PackageVersion Include="Microsoft.CodeCoverage" Version="17.9.0"/>
     <PackageVersion Include="xunit" Version="2.7.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.7" />
-    <PackageVersion Include="SpecFlow.xUnit" Version="3.9.74" />
-    <PackageVersion Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57"/>
     <PackageVersion Include="JunitXml.TestLogger" Version="3.0.114"/>
     <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="Reqnroll" Version="1.0.1" />
+    <PackageVersion Include="Reqnroll.Tools.MsBuild.Generation" Version="1.0.1" />
+    <PackageVersion Include="Reqnroll.xUnit" Version="1.0.1" />
   </ItemGroup>
 </Project>

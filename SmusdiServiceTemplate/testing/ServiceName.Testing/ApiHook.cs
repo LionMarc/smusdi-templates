@@ -1,14 +1,12 @@
-﻿using Smusdi.Testing;
-using TechTalk.SpecFlow;
+﻿using Reqnroll;
+using Smusdi.Testing;
 
 namespace ServiceName.Testing;
 
 [Binding]
-public sealed class ApiHook
+public sealed class ApiHook(SmusdiServiceTestingSteps smusdiServiceTestingSteps)
 {
-    private readonly SmusdiServiceTestingSteps smusdiServiceTestingSteps;
-
-    public ApiHook(SmusdiServiceTestingSteps smusdiServiceTestingSteps) => this.smusdiServiceTestingSteps = smusdiServiceTestingSteps;
+    private readonly SmusdiServiceTestingSteps smusdiServiceTestingSteps = smusdiServiceTestingSteps;
 
     [BeforeScenario("api")]
     public Task InitializeAndStartService() => this.smusdiServiceTestingSteps.GivenTheServiceInitializedAndStarted();

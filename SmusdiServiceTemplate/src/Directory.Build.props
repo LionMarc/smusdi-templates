@@ -6,14 +6,6 @@
 <!--#if (withPostgresql) -->
     <PackageReference Include="Smusdi.PostgreSQL"/>
 <!--#endif -->
-
-    <PackageReference Include="Microsoft.EntityFrameworkCore"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL"/>
-    <PackageReference Include="EFCore.NamingConventions" />
   </ItemGroup>
 
   <ItemGroup>

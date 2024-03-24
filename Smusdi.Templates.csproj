@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="SmusdiServiceTemplate\**\*" Exclude="**\.git\**;**\.gitignore;SmusdiServiceTemplate\**\bin\**;SmusdiServiceTemplate\**\obj\**;SmusdiServiceTemplate\.vs\**;SmusdiServiceTemplate\.vscode\**;Smusdi.Templaces.csproj;" />
+    <Content Include="SmusdiServiceTemplate\**\*" Exclude="**\.git\**;SmusdiServiceTemplate\**\bin\**;SmusdiServiceTemplate\**\obj\**;SmusdiServiceTemplate\.vs\**;SmusdiServiceTemplate\.vscode\**;Smusdi.Templaces.csproj;" />
     <Compile Remove="**\*" />
   </ItemGroup>
 </Project>
